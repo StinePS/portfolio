@@ -1,0 +1,94 @@
+/* GENERELT */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 1rem;
+	background-color: #cef4eb;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.pige {
+	width: 25vw;
+}
+
+/* FONTS & STYLING */
+
+@font-face {
+	font-family: 'wicked_mouseregular';
+	src: url('font_wicked_mouse/wickedmouse-agok-webfont.woff2') format('woff2'),
+		url('font_wicked_mouse/wickedmouse-agok-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+h1 {
+	font-family: 'wicked_mouseregular', sans-serif;
+	font-size: 50px;
+	letter-spacing: 0.05rem;
+	word-spacing: 0.25rem;
+	color: #f5a3cc;
+}
+
+h2 {}
+
+h3 {}
+
+p {}
+
+a {
+	text-decoration: none;
+	color:
+}
+
+a:active {
+	color:
+}
+
+a:hover {
+	color:
+}
+
+a:visited {
+	color:
+}
+
+header {}
+
+#burgermenu {
+	background: none;
+	color: #697654;
+	border: none;
+	padding: 0.5rem;
+	margin-right: -0.5rem;
+	width: 3rem;
+	height: 3rem;
+}
+
+footer {
+	text-align: center;
+}
+
+/*SKÆRMFORMATER */
+
+/* Mobil og Ipad højformat */
+@media (max-width: 767px) {
+	.hide_on_mobile {
+		display: none
+	}
+}
+
+/* Ipad bredformat + desktop */
+@media (min-width: 768px) {
+	.hide_on_desktop {
+		display: none;
+	}
+}
