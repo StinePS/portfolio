@@ -47,7 +47,13 @@ h1 {
 	color: #f5a3cc;
 }
 
-h2 {}
+h2 {
+	font-family: 'wicked_mouseregular', sans-serif;
+	font-size: 2.5rem;
+	color: #3b1d7e;
+	letter-spacing: 0.1rem;
+	padding: 0.75rem 0;
+}
 
 h3 {}
 
@@ -165,6 +171,10 @@ footer {
 	transform: rotateY(180deg);
 }
 
+.flip h2 {
+	padding: 6rem 0;
+}
+
 .flip-front,
 .flip-back {
 	position: absolute;
@@ -174,14 +184,8 @@ footer {
 	backface-visibility: hidden;
 }
 
-.flip-front {
-	background-color: #bbb;
-	color: black;
-}
-
 .flip-back {
-	background-color: rgba(112, 194, 177, 0.9);
-	color: white;
+	background-color: #70c2b1;
 	transform: rotateY(180deg);
 }
 
