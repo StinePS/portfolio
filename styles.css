@@ -16,8 +16,10 @@ img {
 	vertical-align: middle;
 }
 
+section {}
+
 .container {
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -189,6 +191,26 @@ footer {
 	transform: rotateY(180deg);
 }
 
+/* BILLEDREDIGERING */
+figcaption {
+	font-size: 1.5rem;
+}
+
+.image-container {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.image-container figure {
+	flex-grow: 1;
+}
+
+.image-container figcaption {
+	padding: 20px;
+	background: #fff;
+}
+
 /* MOBIL + IPAD HØJFORMAT */
 @media (max-width: 767px) {
 	.hide_on_mobile {
@@ -203,6 +225,21 @@ footer {
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
+	}
+
+	.image-container {
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+
+	.image-container figure {
+		flex-basis: 90%;
+		flex-shrink: 0;
+		scroll-snap-align: center;
+	}
+
+	.image-container img {
+		margin-right: 20px;
 	}
 }
 
