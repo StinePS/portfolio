@@ -100,10 +100,6 @@ nav a {
 	position: relative;
 }
 
-#undermenu {
-	position: relative;
-}
-
 footer {
 	text-align: center;
 	color: #3b1d7e;
@@ -174,6 +170,27 @@ footer {
 	nav a {
 		padding: 1rem;
 	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown_content {
+		display: none;
+		position: absolute;
+		background-color: #e8c0d6;
+		z-index: 2;
+	}
+
+	.dropdown_content a {
+		display: block;
+	}
+
+	.dropdown:hover .dropdown_content {
+		display: block;
+	}
+
 }
 
 /* GRIDS */
