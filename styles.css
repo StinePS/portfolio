@@ -22,13 +22,20 @@ img {
 
 /* FONTS & STYLING */
 
-@font-face {
-	font-family: 'wicked_mouseregular';
-	src: url('font_wicked_mouse/wickedmouse-agok-webfont.woff2') format('woff2'),
-		url('font_wicked_mouse/wickedmouse-agok-webfont.woff') format('woff');
+/* @font-face {
+	font-family: 'brighly_crushregular';
+	src: url('fonts/brighly_crush/brighly-crush.regular-webfont.woff2') format('woff2'),
+		url('fonts/brighly_crush/brighly-crush.regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+} */
 
+@font-face {
+	font-family: 'wicked_mouseregular';
+	src: url('fonts/wicked_mouse/wickedmouse-agok-webfont.woff2') format('woff2'),
+		url('fonts/wicked_mouse/wickedmouse-agok-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 h1 {
@@ -48,7 +55,6 @@ p {}
 a {
 	text-decoration: none;
 	/* color: ; */
-	padding: 1rem;
 }
 
 a:active {
@@ -73,17 +79,16 @@ nav {
 }
 
 nav a {
-	padding: 1rem 0;
-	margin-right: 0.5rem;
-}
-
-#menupunkter {
-	position: relative;
+	font-family: 'wicked_mouseregular', sans-serif;
+	font-size: 1.25rem;
+	color: #3b1d7e;
+	letter-spacing: 0.05rem;
+	padding: 0.75rem 0;
 }
 
 #burgermenu {
 	background: none;
-	color: #697654;
+	color: #380d7d;
 	border: none;
 	padding: 0.5rem;
 	margin-right: 0.5rem;
@@ -91,8 +96,17 @@ nav a {
 	height: 3rem;
 }
 
+#menupunkter {
+	position: relative;
+}
+
+#undermenu {
+	position: relative;
+}
+
 footer {
 	text-align: center;
+	color: #3b1d7e;
 }
 
 /* SPLASH */
@@ -107,7 +121,18 @@ footer {
 	z-index: 1;
 	grid-column: 1/2;
 	grid-row: 2/3;
+}
 
+.hidden {
+	display: none;
+}
+
+.pige_hover:hover :first-child {
+	display: none;
+}
+
+.pige_hover:hover :last-child {
+	display: block;
 }
 
 .signatur {
@@ -144,6 +169,10 @@ footer {
 @media (min-width: 768px) {
 	.hide_on_desktop {
 		display: none;
+	}
+
+	nav a {
+		padding: 1rem;
 	}
 }
 
