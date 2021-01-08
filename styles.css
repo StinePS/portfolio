@@ -3,6 +3,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -16,7 +17,14 @@ img {
 	vertical-align: middle;
 }
 
-section {}
+section {
+	margin-top: 1rem;
+}
+
+.container_wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 .container {
 	max-width: 1200px;
@@ -43,10 +51,13 @@ section {}
 
 h1 {
 	font-family: 'wicked_mouseregular', sans-serif;
-	font-size: 50px;
+	font-size: 3rem;
 	letter-spacing: 0.05rem;
 	word-spacing: 0.25rem;
-	color: #f5a3cc;
+	word-break: break-all;
+	color: #3b1d7e;
+	text-align: center;
+
 }
 
 h2 {
@@ -57,31 +68,69 @@ h2 {
 	padding: 0.75rem 0;
 }
 
-h3 {}
+h3 {
+	color: #3b1d7e;
+}
 
-p {}
+p {
+	font-family: 'Cabin', sans-serif;
+	color: #3b1d7e;
+	word-spacing: 0.05rem;
+	margin-bottom: 1rem;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+figcaption {
+	font-family: 'Cabin', sans-serif;
+	font-weight: 600;
+	color: #3b1d7e;
+	letter-spacing: 0.05rem;
+}
+
+ol {
+	font-family: 'Cabin', sans-serif;
+	color: #3b1d7e;
+	font-size: 1.2rem;
+	word-spacing: 0.05rem;
+	padding: 0 2rem;
+	margin-bottom: 1rem;
+}
 
 a {
 	text-decoration: none;
-	/* color: ; */
-}
-
-a:active {
-	/* color: ; */
-}
-
-a:hover {
-	/* color: ; */
+	color: #3b1d7e;
 }
 
 a:visited {
-	/* color: ; */
+	color: #3b1d7e;
+}
+
+a:active {
+	color: #e85a95;
+}
+
+a:hover {
+	color: #e85a95;
+}
+
+
+.text-content {
+	max-width: 80ch;
+	font-size: 1.2rem;
+	background-color: #eafaf7;
+	border-radius: 1rem;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	padding: 2rem;
+	margin-top: 3rem;
 }
 
 header {
 	padding: 1rem;
 	background-color: #e8c0d6;
-	box-shadow: 5px 0 10px grey;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -94,6 +143,18 @@ nav a {
 	color: #3b1d7e;
 	letter-spacing: 0.05rem;
 	padding: 0.75rem 0;
+}
+
+nav a:visited {
+	color: #3b1d7e;
+}
+
+nav a:active {
+	color: #e85a95;
+}
+
+nav a:hover {
+	color: #e85a95;
 }
 
 #burgermenu {
@@ -111,8 +172,12 @@ nav a {
 }
 
 footer {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1rem;
+	color: #380d7d;
 	text-align: center;
 	color: #3b1d7e;
+	padding: 3rem 0;
 }
 
 /* SPLASH */
@@ -153,10 +218,11 @@ footer {
 }
 
 
-/* Portfolio flipcards */
+/* PORTFOLIO */
 
 .flip {
 	background-color: transparent;
+
 }
 
 .flip-inner {
@@ -166,46 +232,47 @@ footer {
 	text-align: center;
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 1rem;
 }
 
 .flip:hover .flip-inner {
 	transform: rotateY(180deg);
 }
 
-.flip h2 {
-	padding: 6rem 0;
-}
-
 .flip-front {
 	backface-visibility: hidden;
+	border-radius: 1rem;
+	overflow: hidden;
 }
 
 .flip-back {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	background-color: #70c2b1;
+	transform: rotateY(180deg);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	top: 0;
-}
-
-.flip-back {
-	background-color: #70c2b1;
-	transform: rotateY(180deg);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 1rem;
+	overflow: hidden;
 }
 
 /* BILLEDREDIGERING */
 figcaption {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .compare {
 	display: flex;
-	gap: 20px;
-	padding: 20px;
+	grid-gap: 1rem;
+	padding: 1rem 0;
 	max-width: 1200px;
-	argin: 0 auto;
+	margin: 0 auto;
 }
 
 .compare figure {
@@ -213,8 +280,9 @@ figcaption {
 }
 
 .compare figcaption {
-	padding: 20px;
-	background: #fff;
+	padding: 0.5rem;
+	background: transparent;
+	text-align: center;
 }
 
 /* MOBIL + IPAD HØJFORMAT */
@@ -236,16 +304,18 @@ figcaption {
 	.compare {
 		overflow-x: scroll;
 		scroll-snap-type: x mandatory;
+
 	}
 
 	.compare figure {
 		flex-basis: 90%;
 		flex-shrink: 0;
 		scroll-snap-align: center;
+		box-sizing: border-box;
 	}
 
 	.compare img {
-		margin-right: 20px;
+		margin-right: 1rem;
 	}
 }
 
@@ -285,12 +355,12 @@ figcaption {
 /* GRIDS */
 @media only screen and (min-width: 768px) {
 	.column {
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 
 	.grid-2 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 1rem;
+		grid-gap: 2rem;
 	}
 }
