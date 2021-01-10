@@ -40,6 +40,36 @@ section {
 	margin: 0 auto;
 }
 
+a.button {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.25rem;
+	color: #3b1d7e;
+	background-color: #e8c0d6;
+	border-radius: 1.5rem;
+	word-spacing: 0.05rem;
+	line-height: 1.2;
+	border: none;
+	cursor: pointer;
+	padding: 1rem 1.5rem;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+a:hover.button {
+	color: #eafaf7;
+	background-color: #70c2b1;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
 
 /* FONTS & STYLING */
 
@@ -129,6 +159,10 @@ ol {
 }
 
 a {
+	font-family: 'Cabin', sans-serif;
+	color: #3b1d7e;
+	word-spacing: 0.05rem;
+	line-height: 1.2;
 	text-decoration: none;
 	color: #3b1d7e;
 }
@@ -144,6 +178,9 @@ a:active {
 a:hover {
 	color: #e85a95;
 }
+
+
+/* HEADER, NAV & FOOTER */
 
 header {
 	padding: 1rem;
@@ -237,11 +274,6 @@ footer {
 .splash {
 	grid-column: 1/3;
 	grid-row: 1/4;
-}
-
-#index {
-	margin-top: 2rem;
-
 }
 
 
@@ -352,6 +384,11 @@ footer {
 /* GR. UX */
 #miss_tailor {
 	padding-bottom: 1rem;
+}
+
+#ux_button {
+	text-align: center;
+	margin: 2.5rem;
 }
 
 /* GR. ANIMATION */
