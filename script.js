@@ -12,5 +12,5 @@ function siteLoaded() {
 function toggleMenu() {
 	console.log("toggleMenu");
 
-	document.querySelector("#menupunkter").classList.toggle("on");
+	document.querySelector("#menupunkter").classList.toggle("toggle");
 }
