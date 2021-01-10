@@ -40,6 +40,7 @@ section {
 	margin: 0 auto;
 }
 
+
 /* FONTS & STYLING */
 
 @font-face {
@@ -100,6 +101,7 @@ p {
 	font-size: 1.2rem;
 	padding: 2rem;
 	margin-top: 6rem;
+	margin-bottom: 4rem;
 }
 
 .maintext p {
@@ -196,6 +198,7 @@ footer {
 	padding: 3rem 0;
 }
 
+
 /* SPLASH */
 
 #index_section1 img {
@@ -241,6 +244,7 @@ footer {
 
 }
 
+
 /* PORTFOLIO */
 
 .flip {
@@ -285,6 +289,7 @@ footer {
 	overflow: hidden;
 }
 
+
 /* GR. HTML */
 
 @media (min-width: 768px) {
@@ -313,7 +318,7 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(4, 1fr);
-		grid-gap: 1rem;
+		grid-gap: 2rem;
 		box-sizing: content-box;
 	}
 }
@@ -343,6 +348,16 @@ footer {
 	grid-row: 3 / 5;
 }
 
+
+/* GR. UX */
+
+
+/* GR. ANIMATION */
+
+
+/* PILOTPROJEKT */
+
+
 /* BILLEDREDIGERING */
 figcaption {
 	font-size: 1.2rem;
@@ -362,6 +377,10 @@ figcaption {
 	background: transparent;
 	text-align: center;
 }
+
+
+/* REDESIGN */
+
 
 /* MOBIL + IPAD HØJFORMAT */
 @media (max-width: 767px) {
@@ -397,6 +416,7 @@ figcaption {
 	}
 }
 
+
 /* IPAD BREDFORMAT + DESKTOP */
 @media (min-width: 768px) {
 	.hide_on_desktop {
@@ -416,6 +436,10 @@ figcaption {
 
 	nav a {
 		padding: 1rem;
+	}
+
+	.flip {
+		margin-bottom: 2rem;
 	}
 
 	/* Dropdown-menu */
@@ -440,16 +464,30 @@ figcaption {
 	}
 }
 
+
 /* GRIDS */
 @media only screen and (min-width: 768px) {
-	.column {
-		margin-top: 2rem;
+
+	.image {
+		grid-area: image;
+	}
+
+	.text {
+		grid-area: text;
 	}
 
 	.grid-2 {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
 		grid-gap: 2rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'image text';
+	}
+
+	.reverse {
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'text image';
 	}
 
 	.grid-3 {
