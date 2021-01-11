@@ -40,18 +40,20 @@ section {
 	margin: 0 auto;
 }
 
+.center {
+	display: grid;
+	justify-content: center;
+}
+
 a.button {
-	font-family: 'Cabin', sans-serif;
 	font-size: 1.25rem;
-	color: #3b1d7e;
 	background-color: #e8c0d6;
 	border-radius: 1.5rem;
-	word-spacing: 0.05rem;
-	line-height: 1.2;
 	border: none;
 	cursor: pointer;
 	padding: 1rem 1.5rem;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+	margin: 1rem 0;
 }
 
 a:hover.button {
@@ -97,7 +99,7 @@ h2 {
 	font-size: 1.5rem;
 	color: #3b1d7e;
 	letter-spacing: 0.1rem;
-	margin: 0 1rem;
+	margin: 1rem;
 }
 
 h3 {
@@ -307,7 +309,7 @@ footer {
 /* SPLASH */
 
 #index_section1 img {
-	border-radius: none;
+	border-radius: 0;
 	box-shadow: none;
 }
 
@@ -441,27 +443,12 @@ footer {
 	padding-bottom: 1rem;
 }
 
-#ux_button {
-	text-align: center;
-	margin: 2.5rem;
-}
-
 /* ------------------------------------------------------------------------------------- */
 /* GR. ANIMATION */
 
 #assets img {
 	box-shadow: none;
 	height: 100%
-}
-
-#asset_button {
-	text-align: center;
-	margin: 2.5rem;
-}
-
-#game_button {
-	text-align: center;
-	margin: 2.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -621,6 +608,10 @@ figcaption {
 
 	h1 {
 		font-size: 3rem;
+	}
+
+	h2 {
+		margin: 0 1rem;
 	}
 
 	header {
