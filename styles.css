@@ -71,6 +71,7 @@ a:hover.button {
 	border-width: 0;
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* FONTS & STYLING */
 
 @font-face {
@@ -179,7 +180,7 @@ a:hover {
 	color: #e85a95;
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* HEADER, NAV & FOOTER */
 
 header {
@@ -235,7 +236,7 @@ footer {
 	padding: 3rem 0;
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* SPLASH */
 
 #index_section1 img {
@@ -276,7 +277,7 @@ footer {
 	grid-row: 1/4;
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* PORTFOLIO */
 
 .flip {
@@ -321,7 +322,7 @@ footer {
 	overflow: hidden;
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* GR. HTML */
 
 @media (min-width: 768px) {
@@ -355,33 +356,34 @@ footer {
 	}
 }
 
-.image1 {
+.web_img1 {
 	grid-column: 1 / 2;
 	grid-row: 1 / 4;
 }
 
-.image2 {
+.web_img2 {
 	grid-column: 2 / 3;
 	grid-row: 1 / 3;
 }
 
-.image3 {
+.web_img3 {
 	grid-column: 3 / 4;
 	grid-row: 1 / 3;
 }
 
-.image4 {
+.web_img4 {
 	grid-column: 1 / 2;
 	grid-row: 4 / 5;
 }
 
-.image5 {
+.web_img5 {
 	grid-column: 2 / 4;
 	grid-row: 3 / 5;
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* GR. UX */
+
 #miss_tailor {
 	padding-bottom: 1rem;
 }
@@ -391,13 +393,104 @@ footer {
 	margin: 2.5rem;
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* GR. ANIMATION */
 
+#assets img {
+	box-shadow: none;
+	height: 100%
+}
 
+@media only screen and (min-width: 768px) {
+	#screens {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#assets img {
+		height: 80%
+	}
+
+	.float {
+		animation-name: float_kf;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes float_kf {
+		0% {
+			transform: translateY(0vw);
+		}
+
+		50% {
+			transform: translateY(1vw);
+		}
+
+		100% {
+			transform: translateY(0vw);
+		}
+	}
+
+	.wiggle {
+		animation-name: wiggle_kf;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes wiggle_kf {
+		0% {
+			transform: rotate(20deg);
+		}
+
+		50% {
+			transform: rotate(-20deg);
+		}
+
+		100% {
+			transform: rotate(20deg);
+		}
+	}
+}
+
+#assets {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.ani_img1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.ani_img2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+}
+
+.ani_img3 {
+	grid-column: 1 / 2;
+	grid-row: 3 / 5;
+}
+
+.ani_img4 {
+	grid-column: 2 / 3;
+	grid-row: 3 / 5;
+}
+
+.ani_img5 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 5;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* PILOTPROJEKT */
 
 
+
+/* ------------------------------------------------------------------------------------- */
 /* BILLEDREDIGERING */
+
 figcaption {
 	font-size: 1.2rem;
 }
@@ -417,10 +510,11 @@ figcaption {
 	text-align: center;
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* REDESIGN */
 
 
+/* ------------------------------------------------------------------------------------- */
 /* MOBIL + IPAD HØJFORMAT */
 @media (max-width: 767px) {
 	.hide_on_mobile {
@@ -455,7 +549,7 @@ figcaption {
 	}
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* IPAD BREDFORMAT + DESKTOP */
 @media (min-width: 768px) {
 	.hide_on_desktop {
@@ -503,7 +597,7 @@ figcaption {
 	}
 }
 
-
+/* ------------------------------------------------------------------------------------- */
 /* GRIDS */
 @media only screen and (min-width: 768px) {
 
@@ -522,10 +616,24 @@ figcaption {
 		grid-template-areas: 'image text';
 	}
 
-	.reverse {
+	.grid-2-1 {
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas: 'image text';
+	}
+
+	.reverse-2 {
 		display: grid;
 		grid-gap: 2rem;
 		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'text image';
+	}
+
+	.reverse-2-1 {
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: 1fr 2fr;
 		grid-template-areas: 'text image';
 	}
 
