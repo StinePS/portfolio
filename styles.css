@@ -111,7 +111,7 @@ h3 {
 }
 
 p {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #3b1d7e;
 	word-spacing: 0.05rem;
 	line-height: 1.2;
@@ -150,14 +150,14 @@ p {
 }
 
 figcaption {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	color: #3b1d7e;
 	letter-spacing: 0.05rem;
 }
 
 .caption {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #3b1d7e;
 	letter-spacing: 0.05rem;
 	text-align: center;
@@ -165,7 +165,7 @@ figcaption {
 }
 
 ol {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #3b1d7e;
 	font-size: 1.2rem;
 	word-spacing: 0.05rem;
@@ -174,7 +174,7 @@ ol {
 }
 
 a {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #3b1d7e;
 	word-spacing: 0.05rem;
 	line-height: 1.2;
@@ -227,7 +227,7 @@ a:hover {
 }
 
 .numbertext {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #3b1d7e;
 	font-size: 1rem;
 	padding: 1rem;
@@ -263,6 +263,7 @@ a:hover {
 
 /* ------------------------------------------------------------------------------------- */
 /* HEADER, NAV & FOOTER */
+
 nav {
 	position: relative;
 	display: flex;
@@ -275,9 +276,6 @@ header .container {
 	margin: 0 auto;
 	padding: 1rem 1rem;
 }
-
-
-
 
 header {
 	padding: 1rem;
@@ -332,7 +330,7 @@ nav a:hover {
 }
 
 footer {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	color: #380d7d;
 	text-align: center;
@@ -342,6 +340,7 @@ footer {
 
 /* ------------------------------------------------------------------------------------- */
 /* SPLASH */
+
 #index_section1 {
 	margin: 0;
 }
@@ -386,6 +385,10 @@ footer {
 
 /* ------------------------------------------------------------------------------------- */
 /* PORTFOLIO */
+
+#port_section h2 {
+	font-size: 2rem;
+}
 
 .flip {
 	background-color: transparent;
