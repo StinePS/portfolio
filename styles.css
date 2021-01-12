@@ -157,6 +157,14 @@ figcaption {
 	letter-spacing: 0.05rem;
 }
 
+.caption {
+	font-family: 'Cabin', sans-serif;
+	color: #3b1d7e;
+	letter-spacing: 0.05rem;
+	text-align: center;
+	padding: 1rem;
+}
+
 ol {
 	font-family: 'Cabin', sans-serif;
 	color: #3b1d7e;
