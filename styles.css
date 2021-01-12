@@ -138,8 +138,8 @@ p {
 	max-width: 90ch;
 	font-size: 1.2rem;
 	padding: 2rem;
-	margin-top: 6rem;
-	margin-bottom: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .maintext p {
@@ -256,6 +256,21 @@ a:hover {
 
 /* ------------------------------------------------------------------------------------- */
 /* HEADER, NAV & FOOTER */
+nav {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1rem 1rem;
+}
+
+
+
 
 header {
 	padding: 1rem;
@@ -263,16 +278,12 @@ header {
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-nav {
-	text-align: right;
-}
-
 nav a {
 	font-family: 'wicked_mouseregular', sans-serif;
 	font-size: 1.25rem;
 	color: #3b1d7e;
 	letter-spacing: 0.05rem;
-	padding: 0.75rem 0;
+	padding: 1rem;
 }
 
 nav a:visited {
@@ -287,6 +298,15 @@ nav a:hover {
 	color: #e85a95;
 }
 
+#logo img {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 0;
+	box-shadow: none;
+	top: 0;
+	margin-left: -0.5rem;
+}
+
 #burgermenu {
 	background: none;
 	color: #380d7d;
@@ -295,10 +315,13 @@ nav a:hover {
 	margin-right: 0.5rem;
 	width: 3rem;
 	height: 3rem;
+	justify-content: flex-end;
 }
 
 #menupunkter {
-	position: relative;
+	position: absolute;
+	text-align: right;
+	background-color: #e8c0d6;
 }
 
 footer {
@@ -312,6 +335,9 @@ footer {
 
 /* ------------------------------------------------------------------------------------- */
 /* SPLASH */
+#index_section1 {
+	margin: 0;
+}
 
 #index_section1 img {
 	border-radius: 0;
@@ -582,10 +608,9 @@ figcaption {
 	}
 
 	.toggle {
-		position: absolute;
 		top: 100%;
-		left: 0;
-		right: 0;
+		left: -1rem;
+		right: -1rem;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
@@ -631,12 +656,25 @@ figcaption {
 		z-index: 1;
 	}
 
-	nav a {
-		padding: 1rem;
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		height: 2rem;
+	}
+
+	#logo {
+		position: absolute;
+		left: 0;
+
 	}
 
 	.flip {
 		margin-bottom: 2rem;
+	}
+
+	.maintext {
+		margin-top: 6rem;
+		margin-bottom: 4rem;
 	}
 
 	/* Dropdown-menu */
