@@ -61,6 +61,11 @@ a:hover.button {
 	background-color: #70c2b1;
 }
 
+em {
+	font-style: normal;
+	text-decoration: underline;
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -565,7 +570,12 @@ figcaption {
 
 
 /* ------------------------------------------------------------------------------------- */
+/* OM MIG */
+
+
+/* ------------------------------------------------------------------------------------- */
 /* MOBIL + IPAD HØJFORMAT */
+
 @media (max-width: 767px) {
 	.hide_on_mobile {
 		display: none
