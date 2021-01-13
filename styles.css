@@ -38,6 +38,7 @@ section {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+
 }
 
 .center {
@@ -103,7 +104,6 @@ h2 {
 	font-size: 1.5rem;
 	color: #3b1d7e;
 	letter-spacing: 0.1rem;
-	margin: 1rem;
 }
 
 h3 {
@@ -125,28 +125,11 @@ p {
 	padding: 1rem;
 }
 
-.info p {
-	margin: 1rem;
-}
-
-.info p:last-child {
-	margin-bottom: 0;
-}
-
 .maintext {
 	max-width: 90ch;
 	font-size: 1.2rem;
-	padding: 2rem;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-.maintext p {
-	margin: 1rem;
-}
-
-.maintext p:last-child {
-	margin-bottom: 0;
+	padding: 1rem;
+	margin: 2rem 1rem;
 }
 
 figcaption {
@@ -392,7 +375,7 @@ footer {
 
 .flip {
 	background-color: transparent;
-
+	margin: 0 1rem 1rem 1rem;
 }
 
 .flip-inner {
@@ -404,10 +387,6 @@ footer {
 	transform-style: preserve-3d;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 	border-radius: 1rem;
-}
-
-.flip:hover .flip-inner {
-	transform: rotateY(180deg);
 }
 
 .flip-front {
@@ -441,6 +420,7 @@ footer {
 		display: block;
 		height: 100%;
 		object-fit: cover;
+		margin: 0;
 	}
 
 	#html_section3 .container {
@@ -655,10 +635,6 @@ figcaption {
 		font-size: 3rem;
 	}
 
-	h2 {
-		margin: 0 1rem;
-	}
-
 	header {
 		position: fixed;
 		top: 0;
@@ -679,12 +655,16 @@ figcaption {
 	}
 
 	.flip {
-		margin-bottom: 2rem;
+		margin: 0 0 2rem 0;
+	}
+
+	.flip:hover .flip-inner {
+		transform: rotateY(180deg);
 	}
 
 	.maintext {
-		margin-top: 6rem;
-		margin-bottom: 4rem;
+		margin: 6rem auto 4rem auto;
+		padding: 3rem;
 	}
 
 	/* Dropdown-menu */
